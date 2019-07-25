@@ -14,7 +14,7 @@ export default class CharCard extends Component {
           var image = responseData.data.results[0].thumbnail.path + '/portrait_medium.jpg'
           var description = responseData.data.results[0].description
           this.setState({image, description})
-          console.log(responseData.data.results[0].description)
+        //   console.log(responseData.data.results[0].description)
         })
     
         .catch (error => {

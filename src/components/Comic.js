@@ -15,8 +15,8 @@ export default class Comic extends Component {
           var comicImage = responseData.data.results[0].thumbnail.path + '/portrait_small.jpg'
           var description = responseData.data.results[0].description
           this.setState({comicImage, description})
-          console.log('Fetch results for ' + this.props.character + ' ' + comicImage)
-          console.log(responseData.data.results[0].description)
+          // console.log('Fetch results for ' + this.props.character + ' ' + comicImage)
+          // console.log(responseData.data.results[0].description)
         })
     
         .catch (error => {

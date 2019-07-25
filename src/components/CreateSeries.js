@@ -16,8 +16,8 @@ export default class Create extends Component {
           var comicImage = responseData.data.results[0].thumbnail.path + '/portrait_medium.jpg'
           var description = responseData.data.results[0].description
           this.setState({comicImage, description})
-          console.log('Fetch results for ' + this.props.character + ' ')
-          console.log(responseData.data)
+          // console.log('Fetch results for ' + this.props.character + ' ')
+          // console.log(responseData.data)
         })
     
         .catch (error => {
