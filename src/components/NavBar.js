@@ -1,12 +1,12 @@
 import React from 'react'
 import {Tab, Tabs} from 'react-bootstrap'
 import CharCard from './CharCards';
-import Creator from './Creator'
+import Series from './Series'
 import Comics from './Comics'
 
 const NavBar = () => (
 
-    <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+    <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className='nav'>
 
         <Tab eventKey="profile" title="Characters">
             <CharCard />
@@ -16,8 +16,8 @@ const NavBar = () => (
             <Comics />
         </Tab>
 
-        <Tab eventKey="contact" title="Creator">
-            <Creator />
+        <Tab eventKey="contact" title="Series">
+            <Series />
         </Tab>
         
     </Tabs>

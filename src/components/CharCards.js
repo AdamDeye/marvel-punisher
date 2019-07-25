@@ -1,61 +1,24 @@
 import React from 'react'
-import {
-   CardDeck,
-   Card
-} from 'react-bootstrap'
 
+// Using Bootstrap
+import {CardColumns} from 'react-bootstrap'
 
+import CharCard from './CharCard';
 
-const CharCard = () => {
+const CharCards = () => {
 
     return (
-        <CardDeck>
+        <CardColumns>
 
-            <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-                </Card.Text>
-                </Card.Body>
-                <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-                </Card.Footer>
-            </Card>
-
-            <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                    This card has supporting text below as a natural lead-in to additional
-                    content.{' '}
-                </Card.Text>
-                </Card.Body>
-                <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-                </Card.Footer>
-            </Card>
-
-            <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This card has even longer content than the first to
-                    show that equal height action.
-                </Card.Text>
-                </Card.Body>
-                <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-                </Card.Footer>
-            </Card>
+            <CharCard character="Hulk" />  
+            <CharCard character="Thanos" />
+            <CharCard character="Spider-Man" />  
+            <CharCard character="Iron Man" />  
+            <CharCard character="Thor" />   
+            <CharCard character="Captain America" />           
             
-        </CardDeck>
+        </CardColumns>
     )
 }
 
-export default CharCard
+export default CharCards

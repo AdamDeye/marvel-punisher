@@ -1,4 +1,7 @@
+/* Bootstrap Classes */
+
 body {
+  background: black;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -10,4 +13,34 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+/* Custom Classes */
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 30px;
+  border-bottom: 0;
+  line-height: 50px;
+  font-size: 30px
+}
+
+.card {
+  background: rgb(141, 188, 216);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+.cardTitle {
+  font-size: 25px
+}
+
+.card-img-top {
+  width: 60%;
 }
