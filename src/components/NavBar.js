@@ -1,26 +1,25 @@
 import React from 'react'
-import {Tab, Tabs} from 'react-bootstrap'
+import {
+    Navbar,
+    Nav
+} from 'react-bootstrap'
 import CharCard from './CharCards';
 import Series from './Series'
 import Comics from './Comics'
 
 const NavBar = () => (
 
-    <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className='nav'>
-
-        <Tab eventKey="profile" title="Characters">
-            <CharCard />
-        </Tab>
-
-        <Tab eventKey="home" title="Comics">
-            <Comics />
-        </Tab>
-
-        <Tab eventKey="contact" title="Series">
-            <Series />
-        </Tab>
-        
-    </Tabs>
+    <Navbar bg="light" expand="lg">
+    <Navbar.Brand href="./CharCards">React-Bootstrap</Navbar.Brand>
+  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  <Navbar.Collapse id="basic-navbar-nav">
+    <Nav className="mr-auto">
+      <Nav.Link href="./CharCards">Characters</Nav.Link>
+      <Nav.Link href="./Comics">Comics</Nav.Link>
+      <Nav.Link href="./Series">Series</Nav.Link>
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
 
 )
 

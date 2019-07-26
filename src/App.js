@@ -6,9 +6,10 @@ import {
 
 // App Components
 import NavBar from './components/NavBar'
-import CharCards from './components/NavBar'
+import CharCards from './components/CharCards'
 import Comics from './components/Comics'
 import Series from './components/Series'
+
 
 export default class App extends Component {
  
@@ -16,14 +17,14 @@ export default class App extends Component {
 
     return (
       <BrowserRouter className='.background'>  
-
+ 
           <NavBar /> 
 
           {/* Navigable Routes */}
-          <Route path='/CharCards' render={(charcters) => <CharCards />} />
+          <Route path="/CharCards" component={CharCards} />
           <Route path='/Comics' component={Comics}/>
           <Route path='/Series' component={Series} />
-
+ 
       </BrowserRouter>
     )
   }
